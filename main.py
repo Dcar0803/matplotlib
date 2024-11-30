@@ -38,3 +38,32 @@ def plot_line(y_intercept, slope, x_min, x_max):
     plt.legend()
     plt.grid(color = 'green')
     plt.show()
+
+def live_graph():
+
+    plt.ion() #Interactive mode on
+    fig, ax = plt.subplots()
+
+    x_data, y_data = [],[]
+
+    for i in range(100):
+        x_data.append(i)
+        y_data.append(np.random.randon()) #Generates random y axis values
+        
+        if  len(x_data)> 10:
+            x_data.pop(0) 
+            y_data.pop(0)
+    
+        ax.clear()
+        ax.plot(x_data, y_data, 'o-', label='Live Data Points')
+        ax.set_title('Live Graph')
+        ax.set_xlabel('Time (s)')
+        ax.set_ylabel('Value')
+        ax.legend()
+        
+        # Update the graph
+        plt.pause(1) 
+
+    plt.ioff()
+    plt.show()
+    
