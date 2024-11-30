@@ -15,4 +15,4 @@ def plot_normal_distribution():
     plt.ylabel("Value")
     plt.grid(color = 'green')
     plt.show()
-    return
+    
