@@ -17,4 +17,13 @@ def test_plot_line():
         print("Test for plot_line passed.")
     except Exception as e:
         print(f"Test for plot_line failed: {e}")
+
+
+def test_live_graph():
+
+    try:
+        live_graph()
+        print("Test for live graph passed.")
+    except Exception as e: 
+        print(f"Test for live_graph failed: {e}")
     
