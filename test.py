@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from main import plot_normal_distribution
+from main import plot_normal_distribution, plot_line
 
 def test_plot_normal_distribution():
 
