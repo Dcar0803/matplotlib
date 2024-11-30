@@ -16,3 +16,14 @@ def plot_normal_distribution():
     plt.grid(color = 'green')
     plt.show()
     
+def plot_line(y_intercept, slope, x_min, x_max):
+    
+    x = np.linspace(x_min, x_max, 400)
+    y = (slope * x) + y_intercept
+    plt.plot(x, y, label=f'y = {slope}x + {y_intercept}')
+    plt.title("Line Plot")
+    plt.xlabel('x')
+    plt.ylabel('y')
+    plt.legend()
+    plt.grid(color = 'green')
+    plt.show()
