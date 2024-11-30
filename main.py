@@ -41,6 +41,10 @@ def plot_line(y_intercept, slope, x_min, x_max):
 
 def live_graph():
 
+    """Generates and plots one random point per second, continuously updating the graph.
+    
+      Only the 10 most recent points are displayed on the graph.
+    """
     plt.ion() #Interactive mode on
     fig, ax = plt.subplots()
 
