@@ -27,3 +27,8 @@ def test_live_graph():
     except Exception as e: 
         print(f"Test for live_graph failed: {e}")
     
+if __name__ == "__main__":
+    print("Running tests...")
+    test_plot_normal_distribution()
+    test_plot_line()
+    test_live_graph()
